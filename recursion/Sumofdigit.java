@@ -5,8 +5,7 @@ public class Sumofdigit{
             return n;
         }
         div=n%10;
-        n= n/10;
-        return div +digitSum(n);
+        return div +digitSum(n/10);
     }
     public static void main(String [] args){
         System.out.println(digitSum(12345));
