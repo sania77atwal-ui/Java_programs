@@ -4,16 +4,16 @@ public class CountSpecificnum {
         if(n==0){
             return n;
         }
-        div=n%10;
-        countNum(n/10, num);
-        if(div==num){
-            return div;
+        div=n%10;        
+        int result=countNum(n/10, num);
+        if(div==num){          
+            return 1+result;
         }else{
-            return 0;
+            return 0+result;
         }
     }
     public static void main(String[] args) {
-        System.out.println(countNum(12345, 4));
+        System.out.println(countNum(22222, 2));
 
     }
 }
